@@ -1,0 +1,38 @@
+.app.light {
+  background-color: white;
+  color: black;
+}
+
+.app.dark {
+  background-color: black;
+  color: white;
+}
+
+.main-content {
+  padding: 30px;
+}
+/* App.css or ThemeApp.css */
+
+.ThemeApp.light {
+  background-color: white;
+  color: black;
+}
+
+.ThemeApp.dark {
+  background-color: #343a40;
+  color: hsl(0, 5%, 93%);
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: black;
+}
+
+.main-content {
+  padding: 20px;
+}
