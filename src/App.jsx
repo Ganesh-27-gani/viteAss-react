@@ -1,4 +1,5 @@
 import './App.css'
+import Pagination from './assets/Work/Pagination'
 import Navbar from './Swich/Component/Navbar'
 import ProductDetails from './Swich/Component/ProductDetails'
 import Productpage from './Swich/Component/Productpage'
@@ -11,9 +12,10 @@ function App() {
     <>
     
      <ThemeApp/>
-     <Navbar/>
+     {/* <Navbar/> */}
       <Routing/>
       {/* <ProductDetails/> */}
+      {/* <Pagination/> */}
     </>
   )
 }
