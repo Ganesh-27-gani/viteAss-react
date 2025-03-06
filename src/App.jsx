@@ -11,8 +11,8 @@ function App() {
   return (
     <>
     
-     <ThemeApp/>
-     {/* <Navbar/> */}
+     {/* <ThemeApp/> */}
+     <Navbar/>
       <Routing/>
       {/* <ProductDetails/> */}
       {/* <Pagination/> */}

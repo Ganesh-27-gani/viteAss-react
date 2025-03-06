@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ThemeContext } from './ThemeApp'; // Adjust the path as necessary
+import { ThemeContext } from './ThemeApp';  
 
 const MainText = () => {
   const { theme } = useContext(ThemeContext);

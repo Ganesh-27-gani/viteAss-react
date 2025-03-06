@@ -12,22 +12,24 @@ const Productpage = () => {
     const getDataHandeler = async () =>{
     const {data} =await axios("https://fakestoreapi.com/products")
      setProducts(data);
-     console.log(data)
+     console.log(data);
     }
   return (
     <div> 
        <h1>Products</h1>
-        <div className="row" key={products.id}>
+        <div className="row" >
             {
              products && products.length > 0 ? products.map((product)=>(
-             <div className='col-md-3'>
+              <div className='col-md-3' key={product.id}>
                 <Link to={`/product/${product.id}`}>
-                <div className='card'>
-                    <img src={product.image} alt={product.title} />
+                   
+                <div className='card rounded'>
+                    <img src={product.image} alt={product.title} style={{width:"200px",height: "250px" ,objectFit:"fill", display:"block",margin:"auto" }} />
                     <p>{product.title}</p>
                 </div>
+                
                 </Link>
-             </div>
+                </div>
              )) : <p>Loading....</p>
             }
         </div>
